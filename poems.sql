@@ -1,7 +1,9 @@
 /*Top row will always be: 'You' and 'Now'*/
-SELECT Name, MAX(Date)
-AS Last_Thought_Of FROM My_Heart 
-ORDER BY Importance DESC;
+SELECT
+    Name
+    , MAX(Date) AS Importance
+FROM My_Heart 
+ORDER BY 2 DESC;
 
 /*Maintenance query for your relationships, run regularly*/
 SELECT Name,
